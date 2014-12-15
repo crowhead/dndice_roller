@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DnDiceRoller</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <p>Die Type</p>
+          </td>
+          <td>
+            <p>Number of Die</p>
+          </td>
+          <td>
+            <p>Roll Modifier</p>
+          </td>
+          <td>
+            <p>Result</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+<%= yield %>
+
+</body>
+</html>
