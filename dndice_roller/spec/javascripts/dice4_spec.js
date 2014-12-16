@@ -1,6 +1,6 @@
+//= require underscore
 //= require dice_roller
 var DiceRoller = {
-    possible_sides: [4],
     roll: function(sides) {
         return Math.ceil(Math.random() * sides);
     }
@@ -11,11 +11,6 @@ function number_of_attempts(sides) {
 }
 
 describe('DiceRoller', function() {
-    describe('.possible_sides', function() {
-        it('should be include 4', function() {
-            expect(DiceRoller.possible_sides).toContain(4);
-        });
-    });
 
     describe('.roll(4)', function() {
         var sides = 4;
@@ -46,5 +41,14 @@ describe('DiceRoller', function() {
         });
     });
 
+    describe('.roll(100)', function() {
+        var sides = 100;
 
+        it("generates random number between 1 and 100", function() {
+            var possible_outcomes = _.range(1, 101);
+            for (var i = 0; i <= number_of_attempts(sides); i++) {
+                expect(possible_outcomes).toContain(DiceRoller.roll(sides));
+            }
+        });
+    });
 });
