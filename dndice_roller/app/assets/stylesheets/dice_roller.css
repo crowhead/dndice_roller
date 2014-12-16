@@ -1,0 +1,27 @@
+/*https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg
+*/
+@font-face{
+  font-family: 'IM Fell French Canon', serif;
+}
+
+html {
+  background-image: url(https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg)
+}
+
+tr {
+  font-family: 'IM Fell French Canon', serif;
+  color: white;
+  font-size: 2em;
+}
+
+.p {
+  opacity: 1;
+}
+
+div {
+  background-color: rgb(70, 72, 66);
+  background-size: 500px
+}
+.medium{
+  opacity: 0.85;
+}

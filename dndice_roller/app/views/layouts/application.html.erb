@@ -8,8 +8,8 @@
   <script src="application.js"></script>
 </head>
 <body>
-    <div>
-      <table>
+    <div class="medium">
+      <table class="dieTable">
 
       <!-- top row -->
         <tr>
@@ -42,8 +42,7 @@
             <p>d4</p>
           </td>
           <td>
-            <input type="radio" name="d4modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d4modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d4modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d4modifier" size="3" maxlength="3" value="0">
@@ -61,7 +60,7 @@
       <!-- third row with d6-->
         <tr>
           <td>
-            <a href="" onclick=""><img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice6.gif"></a>
+            <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice6.gif" alt="d6" class="dice d6" data-sides="6" height="100" width="100">
           </td>
           <td>
             <input type="text" name="d6number" size="3" maxlength="3" value="1">
@@ -70,8 +69,7 @@
             <p>d6</p>
           </td>
           <td>
-            <input type="radio" name="d6modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d6modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d6modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d6modifier" size="3" maxlength="3" value="0">
@@ -89,7 +87,7 @@
       <!-- fourth row with d8 -->
         <tr>
           <td>
-            <a href="" onclick=""><img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice8.gif"></a>
+            <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice8.gif" alt="d8" class="dice d8" data-sides="8" height="100" width="100">
           </td>
           <td>
             <input type="text" name="d8number" size="3" maxlength="3" value="1">
@@ -98,8 +96,7 @@
             <p>d8</p>
           </td>
           <td>
-            <input type="radio" name="d8modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d8modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d8modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d8modifier" size="3" maxlength="3" value="0">
@@ -117,7 +114,7 @@
         <!-- fifth row with d10 -->
         <tr>
           <td>
-            <a href="" onclick=""><img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice10.gif"></a>
+            <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice10.gif" alt="d10" class="dice d10" data-sides="10" height="100" width="100">
           </td>
           <td>
             <input type="text" name="d10number" size="3" maxlength="3" value="1">
@@ -126,8 +123,7 @@
             <p>d10</p>
           </td>
           <td>
-            <input type="radio" name="d10modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d10modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d10modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d10modifier" size="3" maxlength="3" value="0">
@@ -145,7 +141,7 @@
         <!-- sixth row with d100 -->
         <tr>
           <td>
-            <a href="" onclick=""><img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice100.gif"></a>
+            <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice100.gif" alt="d100" class="dice d100" data-sides="100" height="100" width="100">
           </td>
           <td>
             <input type="text" name="d100number" size="3" maxlength="3" value="1">
@@ -154,8 +150,7 @@
             <p>d100</p>
           </td>
           <td>
-            <input type="radio" name="d100modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d100modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d100modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d100modifier" size="3" maxlength="3" value="0">
@@ -173,7 +168,7 @@
         <!-- seventh row with d12 -->
         <tr>
           <td>
-            <a href="" onclick=""><img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice12.gif"></a>
+            <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice12.gif" alt="d12" class="dice d12" data-sides="12" height="100" width="100">
           </td>
           <td>
             <input type="text" name="d12number" size="3" maxlength="3" value="1">
@@ -182,8 +177,7 @@
             <p>d12</p>
           </td>
           <td>
-            <input type="radio" name="d12modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d12modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d12modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d12modifier" size="3" maxlength="3" value="0">
@@ -201,7 +195,7 @@
         <!-- eigth row with d20 -->
         <tr>
           <td>
-            <a href="" onclick=""><img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice20.gif"></a>
+            <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice20.gif" alt="d20" class="dice d20" data-sides="20" height="100" width="100">
           </td>
           <td>
             <input type="text" name="d20number" size="3" maxlength="3" value="1">
@@ -210,8 +204,7 @@
             <p>d20</p>
           </td>
           <td>
-            <input type="radio" name="d20modifierplus" value="plus" checked="" class="radioStyle">
-            <input type="radio" name="d20modifierminus" value="minus" class="radioStyle">
+            <input type="checkbox" name="d20modifierminus" value="minus">
           </td>
           <td>
             <input type="text" name="d20modifier" size="3" maxlength="3" value="0">
