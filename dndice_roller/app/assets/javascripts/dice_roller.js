@@ -1,10 +1,11 @@
 var DiceRoller = {
     roll: function(sides, modifier, numberOfDie) {
-        return Math.ceil(Math.random() * sides) * numberOfDie + modifier;
+        modifier = (typeof modifier !== 'undefined') ? modifier : 0;
+        return Math.ceil(Math.random() * sides) + modifier;
     }
 };
 
-
+// dice roll function with modifier and number-of-die calculations
 $(document).ready(function(){
 
   $('.dice').click(function(){

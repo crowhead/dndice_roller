@@ -1,10 +1,5 @@
 //= require underscore
 //= require dice_roller
-var DiceRoller = {
-    roll: function(sides) {
-        return Math.ceil(Math.random() * sides);
-    }
-};
 
 function number_of_attempts(sides) {
     return sides * (sides + 1);
@@ -50,5 +45,18 @@ describe('DiceRoller', function() {
                 expect(possible_outcomes).toContain(DiceRoller.roll(sides));
             }
         });
+    });
+
+    describe('with modifier', function(){
+      beforeEach(function() {
+        // lock random number generator to 1
+        // all dice rolls return number_of_sides
+        spyOn(Math, "random").and.returnValue(1);
+      });
+
+      it('adjusts results by modifier value', function(){
+        expect(DiceRoller.roll(4,1)).toBe(4+1);
+        expect(DiceRoller.roll(20,-2)).toBe(20-2);
+      });
     });
 });
