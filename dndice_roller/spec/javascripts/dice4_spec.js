@@ -56,7 +56,25 @@ describe('DiceRoller', function() {
 
       it('adjusts results by modifier value', function(){
         expect(DiceRoller.roll(4,1)).toBe(4+1);
-        expect(DiceRoller.roll(20,-2)).toBe(20-2);
+        expect(DiceRoller.roll(20,"-2")).toBe(20-2);
+      });
+    });
+
+    describe('with number_of_die (requires modifier)', function(){
+      beforeEach(function() {
+        // lock random number generator to 1
+        // all dice rolls return number_of_sides
+        spyOn(Math, "random").and.returnValue(1);
+      });
+
+      it('defaults to one die', function(){
+        expect(DiceRoller.roll(4,0)).toBe(4);
+      });
+
+      it('multiplies results by number of die', function(){
+        expect(DiceRoller.roll(4,0,1)).toBe(4*1);
+        expect(DiceRoller.roll(4,"1",3)).toBe(5*3);
+        expect(DiceRoller.roll(20,-2,"3")).toBe(18*3);
       });
     });
 });

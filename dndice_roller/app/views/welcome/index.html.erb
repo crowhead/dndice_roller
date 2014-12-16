@@ -1,0 +1,213 @@
+
+<div class="medium">
+  <table class="dieTable">
+
+  <!-- top row -->
+    <tr>
+      <td>
+        <p>Die Type</p>
+      </td>
+      <td>
+        <p>Number of Die</p>
+      </td>
+      <td>
+        <p>+ -</p>
+      </td>
+      <td>
+        <p>Roll Modifier</p>
+      </td>
+      <td>
+        <p>Result</p>
+      </td>
+    </tr>
+
+<!-- second row with d20 -->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice20.gif" alt="d20" class="dice d20" data-sides="20" height="100" width="100">
+      </td>
+      <td>
+        <input type="number" name="d20number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d20</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d20x" value="minus">
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d20modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" id="d20_results" class="roll_results" name="d20results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+  <!-- third row with d4-->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice4.gif" alt="d4" class="dice d4" data-sides="4" height="100" width="100">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d4number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d4</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d4" value="minus">
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d4modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" id="d4_results" class="roll_results" name="d4results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+  <!-- fourth row with d6-->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice6.gif" alt="d6" class="dice d6" data-sides="6" height="100" width="100">
+      </td>
+      <td>
+        <input type="text" name="d6number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d6</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d6" value="minus">
+      </td>
+      <td>
+        <input type="text" name="d6modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" name="d6results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+  <!-- fifth row with d8 -->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice8.gif" alt="d8" class="dice d8" data-sides="8" height="100" width="100">
+      </td>
+      <td>
+        <input type="text" name="d8number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d8</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d8" value="minus">
+      </td>
+      <td>
+        <input type="text" name="d8modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" name="d8results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+    <!-- sixth row with d10 -->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice10.gif" alt="d10" class="dice d10" data-sides="10" height="100" width="100">
+      </td>
+      <td>
+        <input type="text" name="d10number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d10</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d10" value="minus">
+      </td>
+      <td>
+        <input type="text" name="d10modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" name="d10results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+    <!-- seventh row with d100 -->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice100.gif" alt="d100" class="dice d100" data-sides="100" height="100" width="100">
+      </td>
+      <td>
+        <input type="text" name="d100number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d100</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d100" value="minus">
+      </td>
+      <td>
+        <input type="text" name="d100modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" name="d100results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+    <!-- eigth row with d12 -->
+    <tr>
+      <td>
+        <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/dice12.gif" alt="d12" class="dice d12" data-sides="12" height="100" width="100">
+      </td>
+      <td>
+        <input type="text" name="d12number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+        <p>d12</p>
+      </td>
+      <td>
+        <input type="checkbox" name="minus_modifier d12" value="minus">
+      </td>
+      <td>
+        <input type="text" name="d12modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <a href="" onclick="">
+          <button>Roll</button>
+        </a>
+      </td>
+      <td>
+        <input type="text" name="d12results" size="5" maxlength="5">
+      </td>
+    </tr>
+  </table>
+</div>

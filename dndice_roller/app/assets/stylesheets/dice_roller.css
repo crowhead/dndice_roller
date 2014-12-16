@@ -5,16 +5,17 @@
 }
 
 html {
-  background-image: url(https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg)
+  background-image: url(https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg);
+  background-size: cover;
 }
 
 tr {
   font-family: 'IM Fell French Canon', serif;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
-.p {
+.td .p {
   opacity: 1;
 }
 
