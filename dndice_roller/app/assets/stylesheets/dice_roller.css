@@ -11,7 +11,7 @@ html {
 
 tr {
   font-family: 'IM Fell French Canon', serif;
-  color: white;
+  color: #F2F0F1;
   font-size: 1.5em;
 }
 
@@ -20,7 +20,7 @@ tr {
 }
 
 div {
-  background-color: rgb(70, 72, 66);
+  background-color: #444240;
   background-size: 500px
 }
 .medium{
