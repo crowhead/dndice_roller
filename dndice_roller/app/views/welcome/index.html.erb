@@ -1,5 +1,11 @@
 
 <div class="main">
+  <div id="crit" class="hidden">
+    <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/Crit_message.gif">
+  </div>
+  <div id="fail" class="hidden">
+    <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/fail_message.gif">
+  </div>
   <table class="dieTable">
 
   <!-- top row -->
@@ -104,7 +110,7 @@
           <button class="roll_button" data-sides="8">Roll</button>
       </td>
       <td>
-        <input type="text" name="d8results" size="5" maxlength="5">
+        <input type="text" id="d8_results" class="roll_results" name="d8results" size="5" maxlength="5">
       </td>
     </tr>
 
@@ -126,7 +132,7 @@
           <button class="roll_button" data-sides="10">Roll</button>
       </td>
       <td>
-        <input type="text" name="d10results" size="5" maxlength="5">
+        <input type="text" id="d10_results" class="roll_results" name="d10results" size="5" maxlength="5">
       </td>
     </tr>
 
@@ -148,7 +154,7 @@
           <button class="roll_button" data-sides="12">Roll</button>
       </td>
       <td>
-        <input type="text" name="d12results" size="5" maxlength="5">
+        <input type="text" id="d12_results" class="roll_results" name="d12results" size="5" maxlength="5">
       </td>
     </tr>
 
@@ -170,7 +176,7 @@
           <button class="roll_button" data-sides="100">Roll</button>
       </td>
       <td>
-        <input type="text" name="d100results" size="5" maxlength="5">
+        <input type="text" id="d100_results" class="roll_results" name="d100results" size="5" maxlength="5">
       </td>
     </tr>
   </table>
