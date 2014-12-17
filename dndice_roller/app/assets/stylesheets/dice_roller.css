@@ -1,28 +1,97 @@
 /*https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg
 */
+
+* {
+  box-sizing: border-box;
+}
+
 @font-face{
   font-family: 'IM Fell French Canon', serif;
 }
 
-html {
+html{
   background-image: url(https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center center;
+  height: 100%;
+  width: 100%;*/
+}
+
+.d20{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice20.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+.d4{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice4.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.d6{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice6.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.d8{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice8.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.d10{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice10.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.d12{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice12.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.d100{
+  background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice100.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.dice{
+  z-index: 1;
+  transition: 0.2s ease;
+  width:100px;
+  height: 100px;
+}
+.dice:hover {
+  z-index: 2;
+  transform: scale(1.5);
 }
 
 tr {
   font-family: 'IM Fell French Canon', serif;
   color: #F2F0F1;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
-.td .p {
+.p {
   opacity: 1;
+}
+.td{
+  padding:5px;
 }
 
 div {
   background-color: #444240;
   background-size: 500px
 }
-.medium{
+
+.main{
   opacity: 0.85;
+  /*margin: 5px 40px 40px 5px;
+  margin-top: 5px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+  /*margin-bottom: 5px;*/
 }
