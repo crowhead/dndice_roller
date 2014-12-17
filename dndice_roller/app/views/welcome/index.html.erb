@@ -1,0 +1,183 @@
+
+<div class="main">
+  <div id="crit" class="hidden">
+    <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/Crit_message.gif">
+  </div>
+  <div id="fail" class="hidden">
+    <img src="https://s3-us-west-2.amazonaws.com/dndiceroller/fail_message.gif">
+  </div>
+  <table class="dieTable">
+
+  <!-- top row -->
+    <tr>
+      <td>
+      </td>
+      <td>
+        <p>Die Type</p>
+      </td>
+      <td>
+        <p>Roll Modifier</p>
+      </td>
+      <td>
+        <p>Number of Die</p>
+      </td>
+      <td>
+        <p>Result</p>
+      </td>
+    </tr>
+
+<!-- second row with d20 -->
+    <tr>
+      <td>
+        <div class="roll_button dice d20" data-sides="20"></div>
+      </td>
+      <td>
+        <p>d20</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d20modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d20number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="20">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d20_results" class="roll_results" name="d20results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+  <!-- third row with d4-->
+    <tr>
+      <td>
+        <div class="roll_button dice d4" data-sides="4"></div>
+      </td>
+      <td>
+        <p>d4</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d4modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d4number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="4">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d4_results" class="roll_results" name="d4results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+  <!-- fourth row with d6-->
+    <tr>
+      <td>
+        <div class="roll_button dice d6" data-sides="6"></div>
+      </td>
+      <td>
+        <p>d6</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d6modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d6number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="6">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d6_results" class="roll_results" name="d6results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+  <!-- fifth row with d8 -->
+    <tr>
+      <td>
+        <div class="roll_button dice d8" data-sides="8"></div>
+      </td>
+      <td>
+        <p>d8</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d8modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d8number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="8">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d8_results" class="roll_results" name="d8results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+    <!-- sixth row with d10 -->
+    <tr>
+      <td>
+        <div class="roll_button dice d10" data-sides="10"></div>
+      </td>
+      <td>
+        <p>d10</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d10modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d10number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="10">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d10_results" class="roll_results" name="d10results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+<!-- seventh row with d12 -->
+    <tr>
+      <td>
+        <div class="roll_button dice d12" data-sides="12"></div>
+      </td>
+      <td>
+        <p>d12</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d12modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d12number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="12">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d12_results" class="roll_results" name="d12results" size="5" maxlength="5">
+      </td>
+    </tr>
+
+    <!-- eigth row with d100 -->
+    <tr>
+      <td class="roll_button dice d100" data-sides="100">
+        <div class="dice d100" data-sides="100"></div>
+      </td>
+      <td>
+        <p>d100</p>
+      </td>
+      <td>
+        <input type="number" class="modifier" name="d100modifier" size="3" maxlength="3" value="0">
+      </td>
+      <td>
+        <input type="number" class='numberOfDie' name="d100number" size="3" maxlength="3" value="1">
+      </td>
+      <td>
+          <button class="roll_button" data-sides="100">Roll</button>
+      </td>
+      <td>
+        <input type="text" id="d100_results" class="roll_results" name="d100results" size="5" maxlength="5">
+      </td>
+    </tr>
+  </table>
+</div>
