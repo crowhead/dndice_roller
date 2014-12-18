@@ -5,60 +5,57 @@
   box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
   font-family: 'IM Fell French Canon', serif;
 }
 
-html{
+html {
   background-image: url(https://s3-us-west-2.amazonaws.com/dndiceroller/DnDiceRoller_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /*background-position: center center;
-  height: 100%;
-  width: 100%;*/
 }
 
-.d20{
+.d20 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice20.gif);
   background-repeat: no-repeat;
   background-position: center center;
 
 }
-.d4{
+.d4 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice4.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
 }
-.d6{
+.d6 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice6.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
 }
-.d8{
+.d8 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice8.gif);
   background-repeat: no-repeat;
   background-position: center center;
 }
-.d10{
+.d10 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice10.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
 }
-.d12{
+.d12 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice12.gif);
   background-repeat: no-repeat;
   background-position: center center;
 }
-.d100{
+.d100 {
   background: url(https://s3-us-west-2.amazonaws.com/dndiceroller/dice100.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
 }
-.dice{
+.dice {
   z-index: 1;
   transition: 0.2s ease;
   width:100px;
@@ -69,17 +66,26 @@ html{
   transform: scale(1.5);
 }
 
+table {
+  padding: 10px;
+}
+
 tr {
   font-family: 'IM Fell French Canon', serif;
   color: #F2F0F1;
   font-size: 1.2em;
+  opacity: 0.8;
+}
+tr:hover {
+  opacity: 1;
 }
 
 .p {
   opacity: 1;
 }
-.td{
-  padding:5px;
+td {
+  padding:10px;
+  margin-right: 20px;
 }
 
 div {
@@ -94,19 +100,23 @@ div {
 #crit {
   z-index: 3;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  top:50px;
+  right:50px;
+  bottom:50px;
+  left:50px;
 }
 
 #fail {
   z-index: 4;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  top:50px;
+  right:50px;
+  bottom:50px;
+  left:50px;
 }
 
 
-.main{
+.main {
   opacity: 0.85;
   margin-left: 20px;
   margin-right: 20px;
