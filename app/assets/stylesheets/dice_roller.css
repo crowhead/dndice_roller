@@ -64,8 +64,8 @@ html {
 .dice:hover {
   z-index: 3;
   transform: scale(1.5);
-/*  box-shadow: 120px 80px 40px 20px #0ff;
-*/}
+ /* box-shadow: 0px 0px 40px 20px #0ff;*/
+}
 
 table {
   z-index: 1;
@@ -127,8 +127,14 @@ div {
 }
 
 .dice_container {
-  padding-right: 30px;
+  padding-right: 100px;
+  padding-bottom: 200px;
+  position: absolute;
 }
+
+/*.dieTable {
+  position: cover;
+}*/
 
 .main {
   opacity: 0.85;
