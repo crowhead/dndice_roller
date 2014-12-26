@@ -127,8 +127,14 @@ div {
 }
 
 .dice_container {
-  padding-right: 30px;
+  padding-right: 100px;
+  padding-bottom: 200px;
+  position: absolute;
 }
+
+/*.dieTable {
+  position: cover;
+}*/
 
 .main {
   opacity: 0.85;

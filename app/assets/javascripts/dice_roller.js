@@ -85,4 +85,20 @@ $(document).ready(function() {
             return;
         }
     });
+
+// mouse scroll function
+    $(function() {
+    $("#scrollable ").append('<img src="images/mousewheelupdown.png" alt="Scroll up or down with mousewheel" />');
+    $("#scrollable").bind("mousewheel", function(event, delta) {
+        if (delta > 0) {
+            this.value = parseInt(this.value) + 1;
+        } else {
+            if (parseInt(this.value) > 0) {
+                this.value = parseInt(this.value) - 1;
+            }
+        }
+        return false;
+     });
+
+});
 });
