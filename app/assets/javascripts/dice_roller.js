@@ -14,9 +14,6 @@ var DiceRoller = {
 // dice roll function with modifier and number-of-die calculations
 $(document).ready(function() {
 
-    // $('.dice').click(function() {
-    //     $(".dice").effect("shake");
-    // });
 
     $('.roll_button').click(function() {
         var die = $(this);
