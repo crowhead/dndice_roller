@@ -89,6 +89,9 @@ td {
   padding:10px;
   margin-right: 20px;
 }
+p {
+  font-size: 24pt;
+}
 
 div {
   background-color: #444240;
@@ -96,14 +99,16 @@ div {
 }
 
 input {
-  width: 50px;
-  height: 20px;
+  width: 80px;
+  height: 30px;
+  font-size: 14pt;
 }
 
-button {
-  width: 100px;
-  height: 30px;
-  text-transform: fill;
+button.roll_button {
+  font-family: 'IM Fell French Canon', serif;
+  font-size: 20pt;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .hidden {
