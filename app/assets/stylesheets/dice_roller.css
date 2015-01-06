@@ -95,6 +95,17 @@ div {
   background-size: 500px
 }
 
+input {
+  width: 50px;
+  height: 20px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  text-transform: fill;
+}
+
 .hidden {
   display: none;
   opacity: 0;
