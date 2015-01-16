@@ -24,7 +24,9 @@ $(document).ready(function() {
         var sides = $(this).data('sides');
         var roll = DiceRoller.roll(sides, modifier, numberOfDie);
         results_display.val(roll);
+        addRollToLog(sides, roll, modifier, numberOfDie);
     });
+
 
     // shakes the dice
     $('.dice_container').click(function() {
@@ -82,4 +84,11 @@ $(document).ready(function() {
             return;
         }
     });
+
+    // text area roll result log
+    function addRollToLog (sides, roll, modifier, numberOfDie){
+     var rollResult = 'Rolled'+numberOfDie+'d'+sides+'with a mod of'+modifier+'for a total score of'+roll;
+    // $('#text_log')[0].textContent = '';
+    $('#text_log')[0].textContent = $('#text_log')[0].textContent + '\n' + rollResult;
+}
 });
