@@ -87,7 +87,7 @@ $(document).ready(function() {
 
     // text area roll result log
     function addRollToLog (sides, roll, modifier, numberOfDie){
-     var rollResult = 'Rolled'+numberOfDie+'d'+sides+'with a mod of'+modifier+'for a total score of'+roll;
+     var rollResult = 'Rolled '+numberOfDie+' d'+sides+'with a mod of '+modifier+' for a total score of '+roll;
     // $('#text_log')[0].textContent = '';
     $('#text_log')[0].textContent = $('#text_log')[0].textContent + '\n' + rollResult;
 }
