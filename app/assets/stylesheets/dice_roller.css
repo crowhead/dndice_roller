@@ -89,6 +89,15 @@ td {
   padding:10px;
   margin-right: 20px;
 }
+p {
+  font-size: 24pt;
+}
+.site_name {
+  font-size: 36pt;
+  font-family: 'IM Fell French Canon', serif;
+  color: rgb(255, 128, 4);
+  position:;
+}
 
 div {
   background-color: #444240;
@@ -104,6 +113,21 @@ button {
   width: 100px;
   height: 30px;
   text-transform: fill;
+}
+
+input {
+  width: 80px;
+  height: 30px;
+  font-size: 14pt;
+  padding-left: 5px;
+}
+
+button.roll_button {
+  font-family: 'IM Fell French Canon', serif;
+  font-size: 20pt;
+  color: rgb(45,45,45);
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .hidden {
@@ -138,9 +162,7 @@ button {
 }
 
 .dice_container {
-  padding-right: 100px;
-  padding-bottom: 200px;
-  position: absolute;
+  padding-right: 30px;
 }
 
 /*.dieTable {

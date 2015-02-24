@@ -24,6 +24,7 @@ $(document).ready(function() {
         var sides = $(this).data('sides');
         var roll = DiceRoller.roll(sides, modifier, numberOfDie);
         results_display.val(roll);
+        addRollToLog(sides, roll, modifier, numberOfDie);
     });
 
     // shakes the dice
@@ -83,19 +84,25 @@ $(document).ready(function() {
         }
     });
 
-// mouse scroll function
+    // mouse scroll function
     $(function() {
-    $("#scrollable ").append('<img src="images/mousewheelupdown.png" alt="Scroll up or down with mousewheel" />');
-    $("#scrollable").bind("mousewheel", function(event, delta) {
-        if (delta > 0) {
-            this.value = parseInt(this.value) + 1;
-        } else {
-            if (parseInt(this.value) > 0) {
-                this.value = parseInt(this.value) - 1;
+        $("#scrollable ").append('<img src="images/mousewheelupdown.png" alt="Scroll up or down with mousewheel" />');
+        $("#scrollable").bind("mousewheel", function(event, delta) {
+            if (delta > 0) {
+                this.value = parseInt(this.value) + 1;
+            } else {
+                if (parseInt(this.value) > 0) {
+                    this.value = parseInt(this.value) - 1;
+                }
             }
-        }
-        return false;
-     });
+            return false;
+        });
 
-});
+
+        // text area roll result log
+        function addRollToLog(sides, roll, modifier, numberOfDie) {
+            var rollResult = 'Rolled ' + numberOfDie + ' d' + sides + 'with a mod of ' + modifier + ' for a total score of ' + roll;
+            $('#text_log')[0].textContent = $('#text_log')[0].textContent + '\n' + rollResult;
+        }
+    });
 });
